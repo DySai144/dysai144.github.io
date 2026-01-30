@@ -1,0 +1,5 @@
+{
+  "What is the main purpose of using semantic HTML tags?": "To give meaning to content and improve accessibility and SEO.",
+  "Which tag best represents the main content of a webpage? A. &lt;div&gt; B. &lt;main&gt; C. &lt;article&gt; D. &lt;section&gt;": "&lt;main&gt; — represents the dominant, unique content of the page.",
+  "Which of the following tags should be used for navigation links? A. &lt;menu&gt; B. &lt;nav&gt;  C. &lt;aside&gt; D. &lt;header&gt;": "&lt;nav&gt; — defines navigation sections or menus."
+}

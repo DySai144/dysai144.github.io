@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flash Card App</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body onload="loadFlashcards()">
+        <h1 class="title">Hi! Time to learn something new!.</h1>
+        <div class="subtitle">
+            <h2>Please select a flash card pack to use.</h2>
+        </div>
+        <div class="pack-selection-container">
+            <div class="button-container">
+                <button id="btnFirstPack">Web Development Fundamentals</button>
+                <button id="btnSecondPack">NREMT prep</button>
+                <button id="btnThirdPack">Html Semantics</button>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class=flash-card-container>        
+                <div class="question">
+                    <h3>Question</h3>
+                </div>
+                <div class="answer">
+                    <h3>Answer</h3>
+                </div>
+                <div class="radio-selection">
+                    <h3>Did you get it right?</h3>
+                    <input type="radio" id="correct" name="answer" value="correct">
+                    <label for="correct">Yes</label><br>
+                    <input type="radio" id="incorrect" name="answer" value="incorrect">
+                    <label for="incorrect">No</label><br>
+            </div>
+            <div class="button-container">
+                <button id="btnCheckAnswer">Check Answer</button>
+                <button id="btnNextQuestion">Next Question</button>
+                <button id="btnMissedCards">Review Missed Cards</button>
+                <button id="btnReturn">Return</button>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

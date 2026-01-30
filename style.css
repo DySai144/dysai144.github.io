@@ -1,0 +1,71 @@
+button {
+    background-color:#19b7b7;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    padding: 20px;
+}
+
+.answer {    
+    border: solid 5px #008000;
+    text-align: center;
+    width: 45%; 
+    border-radius: 10px;
+    display: none;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 100px;
+} 
+
+.flash-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 25px;
+    row-gap: 10px;
+}
+
+.game-container {
+    display: none;
+}
+
+.question {
+    border: solid 5px #ff0000;
+    text-align: center;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.pack-selection-container {
+    display: block;
+}
+
+.radio-selection {
+    display: none;
+}
+
+.radio-selection h3 {
+    padding: 0px;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: "Dancing Script";   
+    margin-bottom: 20px; 
+}
+
+.title {
+    text-align: center;
+    font-family: "Dancing Script";   
+    margin-bottom: 25px; 
+}

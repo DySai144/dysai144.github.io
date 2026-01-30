@@ -1,0 +1,80 @@
+{
+"What are the three core technologies of the web?":
+"HTML for structure, CSS for presentation, and JavaScript for behavior.",
+"What does HTTP stand for and what is its role?":
+"Hypertext Transfer Protocol; it defines how clients and servers communicate on the web.",
+"What is the difference between HTTP methods GET and POST?":
+"GET retrieves resources and is idempotent; POST submits data to create or change resources.",
+"Define REST in one sentence.":
+"An architectural style that uses stateless HTTP and resource-oriented URLs with standard methods.",
+"What is a semantic HTML element? Give two examples.":
+"Elements that convey meaning about content structure, e.g., <header> and <article>.",
+"Why prefer semantic HTML over generic <div> tags?":
+"Improves accessibility, SEO, and maintainability by describing content structure.",
+"What does 'mobile-first' mean in responsive design?":
+"Design for small screens first, then enhance layouts with min-width media queries.",
+"What is CSS specificity (highest to lowest)?":
+"Inline styles > IDs > classes/attributes/pseudo-classes > elements/pseudo-elements.",
+"When should you use !important in CSS?":
+"Very sparingly; it overrides normal cascade and can harm maintainability.",
+"What is the recommended casing for CSS class names?":
+"Kebab-case, e.g., .machine-info.",
+"What is the DOM?":
+"The Document Object Model—an in-memory tree representing HTML that scripts can read/change.",
+"What does 'use strict' do in JavaScript?":
+"Enables stricter parsing/error handling (e.g., disallows implicit globals).",
+"Should you log to the console in production code?":
+"No—avoid console.log in production to keep logs clean and prevent info leakage.",
+"What is an IIFE and why use it?":
+"Immediately Invoked Function Expression; creates a local scope and avoids globals.",
+"Give two common OWASP security risks web apps must mitigate.":
+"Cross-Site Scripting (XSS) and SQL Injection.",
+"How do you prevent SQL Injection in server code?":
+"Use parameterized queries instead of string concatenation.",
+"What is CSP and why use it?":
+"Content Security Policy; a response header that limits sources for content to reduce XSS.",
+"What does CORS control?":
+"Whether a browser allows a web page to make requests to a different origin.",
+"How should dates be stored and transmitted in web apps?":
+"Store in UTC; use ISO 8601 (e.g., 2025-11-01T19:00:00Z) in query strings and APIs.",
+"What is caching and why is it important?":
+"Storing responses to reuse later; reduces latency, bandwidth, and server load.",
+"Name two front-end performance tips.":
+"Minify/bundle assets and use HTTP caching/CDNs.",
+"What is accessibility (a11y) and one basic practice?":
+"Designing for all users, including disabled; e.g., provide alt text for images.",
+"What is the purpose of ARIA attributes?":
+"Enhance accessibility by conveying roles/states to assistive technologies.",
+"In AJAX, how should 401 responses be handled in a sessioned UI?":
+"Provide a status code handler to redirect to login or refresh appropriately.",
+"What naming style is recommended for HTML element IDs/classes in this standard?":
+"Kebab-case for classes; HTML control IDs may use Hungarian-style prefixes if applicable.",
+"What TypeScript compiler options improve safety?":
+"Enable strict, strictBindCallApply, and noImplicitAny.",
+"How should TypeScript interfaces be named per the guide?":
+"Do not prefix interface names with 'I'.",
+"What’s a good rule for variable and method naming?":
+"Descriptive names; methods use verbs (e.g., get/save) and booleans start with is/has/should.",
+"Why avoid duplicated code?":
+"It increases bugs and maintenance cost; extract shared logic into functions/modules.",
+"What is the recommendation for configuration and secrets?":
+"Don’t commit production secrets; use environment overrides or a vault.",
+"Why avoid SELECT * in SQL for APIs?":
+"Always select only needed columns to reduce I/O and improve stability.",
+"What is a good default for time zones in databases?":
+"Store timestamps in UTC and suffix column names with Utc/Local when using TIME/DATE/DATETIME2.",
+"How should AJAX requests serialize JSON bodies?":
+"Set contentType to application/json and use JSON.stringify.",
+"What is the recommended filename casing for JavaScript and CSS files?":
+"Kebab-case, e.g., find-customer.js and machine-info.css.",
+"What is the preferred approach to handle long-running requests from the UI?":
+"Support cancellation tokens and ensure the server cancels work when the client aborts.",
+"Why avoid global variables in web scripts?":
+"They cause name collisions and are hard to test; use modules/IIFEs for encapsulation.",
+"What is the recommended way to format dates in URLs?":
+"Use ISO 8601 in query strings for consistency and lack of ambiguity.",
+"How should you structure unit tests in solutions?":
+"Keep test projects as siblings to the target project and name them ProjectName.Tests.",
+"What’s the rule about returning collections from methods?":
+"Return empty collections instead of null to simplify consumers."
+}
