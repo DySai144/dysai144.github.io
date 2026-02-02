@@ -134,7 +134,6 @@ returnButton.addEventListener('click', function() {
 })
 
 reviewMissedCardsButton.addEventListener('click', function() {
-    toggleReviewMissedCardsDisplay();
     if (missedQuestionsArray.length === 0) {
         alert("Well done! You have no missed cards to review!");
         return;
@@ -144,4 +143,6 @@ reviewMissedCardsButton.addEventListener('click', function() {
         reviewMissedCards = true;
         radio.style.display = 'none';
         getRandomQuestionAndAnswer();
-    }});
+    }
+    toggleReviewMissedCardsDisplay();
+});
