@@ -1,7 +1,8 @@
 button {
     background-color:#19b7b7;
     color: #ffffff;
-    padding: 20px;
+    font-size: 20px;
+    padding: 18px;
     border-radius: 10px;
 }
 
@@ -13,8 +14,17 @@ h3 {
     padding: 20px;
 }
 
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 46%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
 .answer {    
-    border: solid 5px #008000;
+    border: solid 5px #19b7b7;
     text-align: center;
     width: 45%; 
     border-radius: 10px;
@@ -23,7 +33,7 @@ h3 {
 
 .button-container {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 15px;
 } 
 
 .flash-card-container {
@@ -31,7 +41,7 @@ h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    column-gap: 25px;
+    column-gap: 10px;
     row-gap: 10px;
 }
 
@@ -40,7 +50,8 @@ h3 {
 }
 
 .question {
-    border: solid 5px #ff0000;
+    border: solid 5px #6006d6;
+
     text-align: center;
     width: 45%;
     border-radius: 10px;
@@ -56,16 +67,4 @@ h3 {
 
 .radio-selection h3 {
     padding: 0px;
-}
-
-.subtitle {
-    text-align: center;
-    font-family: "Dancing Script";   
-    margin-bottom: 20px; 
-}
-
-.title {
-    text-align: center;
-    font-family: "Dancing Script";   
-    margin-bottom: 25px; 
 }
