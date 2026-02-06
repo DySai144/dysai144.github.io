@@ -6,17 +6,20 @@
         <title>Flash Card App</title>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-    <body onload="loadFlashcards()">
+    <body>
         <img src="images/Gemini_Generated_Image_7va6b07va6b07va6.jpg" alt="Flash Card Logo" class="logo">
+    
+        <div class="pack-selection-container" style="display: block;">
+<div class="button-container" id="pack-button-list">
+    </div>
+
+<div class="button-container">
+    <button id="btnCreateMode" style="background-color: #6006d6;">+ Create New Cards</button>
+    <input type="file" id="import-file" style="display:none" accept=".json">
+    <button id="btnImport" style="background-color: #f39c12;">Import Pack</button>
+</div>
         </div>
-        <div class="pack-selection-container">
-            <div class="button-container">
-                <button id="btnFirstPack">Web Dev Fundamentals</button>
-                <button id="btnSecondPack">NREMT prep</button>
-                <button id="btnThirdPack">Html Semantics</button>
-            </div>
-        </div>
-        <div class="game-container">
+        <div class="game-container" style="display: none;">
             <div class=flash-card-container>        
                 <div class="question">
                     <h3>Question</h3>
@@ -24,20 +27,49 @@
                 <div class="answer">
                     <h3>Answer</h3>
                 </div>
-                <div class="radio-selection">
-                    <h3>Did you get it right?</h3>
-                        <input type="radio" id="correct" name="answer" value="correct">
-                        <label for="correct">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="radio" id="incorrect" name="answer" value="incorrect">
-                        <label for="incorrect">No</label>
             </div>
-            <div class="button-container">
-                <button id="btnCheckAnswer">Check Answer</button>
-                <button id="btnNextQuestion">Next Question</button>
-                <button id="btnMissedCards">Review Missed Cards</button>
-                <button id="btnReturn">Return</button>
+            <div class="radio-selection" id="pass-fail">
+                <h3>Did you get it right?</h3>
+                    <input type="radio" id="correct" name="answer" value="correct">
+                    <label for="correct">Yes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="radio" id="incorrect" name="answer" value="incorrect">
+                    <label for="incorrect">No</label>
             </div>
+        <div class="button-container">
+            <button id="btnCheckAnswer">Check Answer</button>
+            <button id="btnNextQuestion">Next Question</button>
+            <button id="btnMissedCards">Review Missed Cards</button>
+            <button id="btnReturn">Return</button>
         </div>
+    </div>
+</div>
+
+<div class="create-container" style="display: none;">
+    <div class="flash-card-container">
+        <h2>Create Flashcards</h2>
+        <div class="question">
+            <label>Select Pack:</label>
+            <select id="pack-folder-select">
+                <option value="new">-- Create New Pack --</option>
+                <option value="Web Development Fundamentals">Web Development Fundamentals</option>
+                <option value="NREMT Exam Prep">NREMT Exam Prep</option>
+                <option value="Html Semantics">Html Semantics</option>
+            </select>
+            <input type="text" id="new-pack-name" placeholder="Enter New Pack Name" style="margin-top:10px;">
+        </div>
+        
+        <div class="question" style="border-color: #19b7b7; margin-top: 10px;">
+            <input type="text" id="custom-front" placeholder="Enter Question (Front)">
+            <hr>
+            <input type="text" id="custom-back" placeholder="Enter Answer (Back)">
+        </div>
+
+        <div class="button-container">
+            <button id="btnSaveCard">Save Card</button>
+            <button id="btnCancelCreate" style="background-color: #666;">Back to Menu</button>
+        </div>
+    </div>
+</div>
         <script src="app.js"></script>
     </body>
 </html>
